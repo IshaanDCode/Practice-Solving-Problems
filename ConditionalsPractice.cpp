@@ -4,7 +4,6 @@
 using namespace std;
 
 void solve(){
-    while(true){
         int n;
         cin >> n;
         vector<string> arr = {"one", "two","three","four", "five","six", "seven","eight", "nine", "ten"};
@@ -37,8 +36,7 @@ void solve(){
         cout << arr[8] << endl;
         }
         else{
-        cout << "score is greater than 9"; 
-        }
+        cout << "Greater than 9"; 
     }
 } 
 int main(){
