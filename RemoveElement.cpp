@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int removeElement(vector<int>& nums, int val) {
+    void removeElement(vector<int>& nums, int val) {
         int n;
 
         for(int i = 0; i < n; i++){
