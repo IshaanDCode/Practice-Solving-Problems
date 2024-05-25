@@ -1,48 +1,43 @@
-#include <vector>
-#include <iostream>
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        // Create a dummy node to act as the starting point of the merged list
+        ListNode dummy;
+        ListNode* tail = &dummy;
 
-// Function to merge two sorted lists
-std::vector<int> Merge(const std::vector<int>& L1, const std::vector<int>& L2) {
-    std::vector<int> FinalList;
-    int i = 0, j = 0;
-
-    // Merge elements from both lists in sorted order
-    while (i < L1.size() && j < L2.size()) {
-        if (L1[i] < L2[j]) {
-            FinalList.push_back(L1[i]);
-            ++i;
-        } else {
-            FinalList.push_back(L2[j]);
-            ++j;
+        // Loop until either list1 or list2 is null
+        while (list1 != nullptr && list2 != nullptr) {
+            if (list1->val < list2->val) {
+                // Attach list1's node to the merged list and move list1's pointer
+                tail->next = list1;
+                list1 = list1->next;
+            } else {
+                // Attach list2's node to the merged list and move list2's pointer
+                tail->next = list2;
+                list2 = list2->next;
+            }
+            // Move the tail pointer forward
+            tail = tail->next;
         }
+
+        // Attach the remaining nodes from either list1 or list2
+        if (list1 != nullptr) {
+            tail->next = list1;
+        } else {
+            tail->next = list2;
+        }
+
+        // Return the merged list starting from the node after the dummy node
+        return dummy.next;
     }
-
-    // Add remaining elements from L1 if any
-    while (i < L1.size()) {
-        FinalList.push_back(L1[i]);
-        ++i;
-    }
-
-    // Add remaining elements from L2 if any
-    while (j < L2.size()) {
-        FinalList.push_back(L2[j]);
-        ++j;
-    }
-
-    return FinalList;
-}
-
-// Example usage
-int main() {
-    std::vector<int> L1 = {1, 3, 5, 7};
-    std::vector<int> L2 = {2, 4, 6, 8};
-
-    std::vector<int> FinalList = Merge(L1, L2);
-
-    // Print the merged list
-    for (int num : FinalList) {
-        std::cout << num << " ";
-    }
-
-    return 0;
-}
+};
