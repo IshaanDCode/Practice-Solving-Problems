@@ -1,11 +1,13 @@
 class Solution {
 public:
-    vector<int> nums;
-        int n;
-
-        for(int i = 0; i < n; i++){
-            cin >> n;
-            nums.push_back(n);
+    
+        int x;
+        cin >> x;
+        vector<int> nums;
+        int val;
+        for(int i = 0; i < nums.size(x)); i++){
+            cin >> val;
+            nums.push_back(val);
             cout << nums[i];
         }
     }
