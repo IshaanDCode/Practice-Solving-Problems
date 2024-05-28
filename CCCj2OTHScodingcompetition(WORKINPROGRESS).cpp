@@ -28,7 +28,7 @@ int main() {
     int count = n - count(v.begin(), v.end(), max_explosion) + 1;
 
     // Calculate the average excluding the largest explosion
-    int average = sum / (n - 1);
+    int average = sum / (n - 1); // This line is problematic and should consider multiple largest explosions
 
     // Output the result
     cout << average;
