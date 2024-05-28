@@ -10,7 +10,7 @@ int main() {
 
     vector<int> v(n);
     for (int i = 0; i < n; i++) {
-        cin >> v[i];
+        cin >> v[i]; // input the size of each explosion
     }
 
     // Find the largest explosion
@@ -19,7 +19,7 @@ int main() {
     // Calculate the sum excluding the largest explosion
     int sum = 0;
     for (int i = 0; i < n; i++) {
-        if (v[i] != max_explosion) {
+        if (v[i] != max_explosion) { // check if the current element is not the largest explosion
             sum += v[i];
         }
     }
