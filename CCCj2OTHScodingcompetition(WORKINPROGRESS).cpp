@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // For max_element
+#include <algorithm> // For max_element and count
 using namespace std;
 
 int main() {
@@ -20,9 +20,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         total_sum += v[i];
     }
-
-    // Count the occurrences of the largest explosion
-    int max_count = count(v.begin(), v.end(), max_explosion);
 
     // Calculate the sum excluding one occurrence of the largest explosion
     int sum_excluding_one_max = total_sum - max_explosion;
