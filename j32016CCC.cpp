@@ -4,7 +4,7 @@
 using namespace std;
 
 // Function to check whether string is palindrome
-string isPalindrome(string &S) {
+string isPalindrome(string S) {
     int n = S.length();
     for (int i = 0; i < n / 2; ++i) {
         if (S[i] != S[n - i - 1]) {
