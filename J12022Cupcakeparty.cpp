@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
   int b, s;
-  cin >> b 
+  cin >> b;
   cin >> s;
   int total;
   total = b * 8 + s * 3;
