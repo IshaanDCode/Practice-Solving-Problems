@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> // For max_element and count
+#include <algorithm> // For max_element
 using namespace std;
 
 int main() {
@@ -12,6 +12,12 @@ int main() {
         cin >> v[i]; // input the size of each explosion
     }
 
+    if (n == 1) {
+        // If there's only one explosion, we cannot exclude any explosion.
+        cout << 0;
+        return 0;
+    }
+
     // Find the largest explosion
     int max_explosion = *max_element(v.begin(), v.end());
 
@@ -21,14 +27,14 @@ int main() {
         total_sum += v[i];
     }
 
-    // Calculate the sum excluding one occurrence of the largest explosion
-    int sum_excluding_one_max = total_sum - max_explosion;
+    // Calculate the sum excluding the largest explosion
+    int sum_excluding_max = total_sum - max_explosion;
 
-    // Calculate the count of elements excluding one occurrence of the largest explosion
-    int count_excluding_one_max = n - 1;
+    // Calculate the count of elements excluding the largest explosion
+    int count_excluding_max = n - 1;
 
-    // Calculate the average excluding one occurrence of the largest explosion
-    double average = static_cast<double>(sum_excluding_one_max) / count_excluding_one_max;
+    // Calculate the average excluding the largest explosion and round down to the nearest integer
+    int average = sum_excluding_max / count_excluding_max;
 
     // Output the result
     cout << average;
