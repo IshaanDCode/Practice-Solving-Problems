@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <numeric> // For accumulate
 #include <algorithm> // For max_element
 using namespace std;
 
@@ -16,19 +15,23 @@ int main() {
     // Find the largest explosion
     int max_explosion = *max_element(v.begin(), v.end());
 
-    // Calculate the sum excluding the largest explosion
-    int sum = 0;
+    // Calculate the sum of all explosions
+    int total_sum = 0;
     for (int i = 0; i < n; i++) {
-        if (v[i] != max_explosion) { // check if the current element is not the largest explosion
-            sum += v[i];
-        }
+        total_sum += v[i];
     }
 
-    // Adjust for the case where the largest explosion occurs multiple times
-    int count = n - count(v.begin(), v.end(), max_explosion) + 1;
+    // Count the occurrences of the largest explosion
+    int max_count = count(v.begin(), v.end(), max_explosion);
 
-    // Calculate the average excluding the largest explosion
-    int average = sum / (n - 1); // This line is problematic and should consider multiple largest explosions
+    // Calculate the sum excluding one occurrence of the largest explosion
+    int sum_excluding_one_max = total_sum - max_explosion;
+
+    // Calculate the count of elements excluding one occurrence of the largest explosion
+    int count_excluding_one_max = n - 1;
+
+    // Calculate the average excluding one occurrence of the largest explosion
+    double average = static_cast<double>(sum_excluding_one_max) / count_excluding_one_max;
 
     // Output the result
     cout << average;
