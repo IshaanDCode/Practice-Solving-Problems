@@ -17,7 +17,7 @@ string isPalindrome(string &S) {
 // Driver Code
 int main() {
     string S;
-    cin >> s;
+    cin >> S; // making it user inputted
     cout << isPalindrome(S) << endl;
     return 0;
 }
