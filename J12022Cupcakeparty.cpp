@@ -10,5 +10,6 @@ int main(){
   cin >> s;
   int total;
   total = b * 8 + s * 3;
-  cout << total
+  cout << total - 28;
+  
 }
