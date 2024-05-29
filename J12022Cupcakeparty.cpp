@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-using namespaced std;
+using namespace std;
 
 int main(){
   int b; //big boxes
