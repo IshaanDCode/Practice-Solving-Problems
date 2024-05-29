@@ -4,9 +4,8 @@
 using namespace std;
 
 int main(){
-  int b; //big boxes
-  int s; //small boxes
-  cin >> b;
+  int b, s;
+  cin >> b 
   cin >> s;
   int total;
   total = b * 8 + s * 3;
