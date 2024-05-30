@@ -13,8 +13,8 @@ int main(){
     }
     sort(x.begin(), x.end());
     unique(x.begin(), x.end());
-    for(int j: v){
-        cout << v[i];
+    for(int j = 0; j < n; j++){
+        cout << x[j];
     }
     
 }
