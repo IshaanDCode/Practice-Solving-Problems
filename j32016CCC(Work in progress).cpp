@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -14,7 +13,7 @@ string isPalindrome(string S) {
     }
     return "Yes";
 }
-
+//Now I will take help because I have not recieved help from papa so I will use
 // Driver Code
 int main() {
     string S;
