@@ -9,7 +9,6 @@ int main(){
     int v = 0;
     for(int i = 0; i < n; i++){
         cin >> v;
-        cout << endl;
         x.push_back(v);
     }
     sort(x.begin(), x.end());
