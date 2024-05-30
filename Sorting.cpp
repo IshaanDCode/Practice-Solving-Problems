@@ -12,7 +12,6 @@ int main(){
         x.push_back(v);
     }
     sort(x.begin(), x.end());
-    unique(x.begin(), x.end());
     for(int j = 0; j < n; j++){
         cout << x[j] << "\n";
     }
