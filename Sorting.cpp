@@ -6,10 +6,10 @@ int main(){
     int n;
     cin >> n;
     vector<int> x;
-    int x = 0;
+    int v = 0;
     for(int i = 0; i < n; i++){
-        cin x;
-        x.push_back(x);
+        cin >> v;
+        x.push_back(v);
     }
     sort(x.begin(), x.end());
     unique(x.begin(), x.end());
