@@ -9,7 +9,8 @@ int main(){
   total = x + (x - 2);
   double z;
   z = total / 2;
-  cout << z;
+  cout << fixed;  
+  cout << setprecision(2) << f;
   
 }
 
