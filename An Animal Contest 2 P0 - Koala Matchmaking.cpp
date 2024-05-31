@@ -3,11 +3,11 @@
 #include <algorithm>
 using namespace std;
 int main(){
-  int x;
+  double x;
   cin >> x;
-  int total = 0;
+  double total = 0;
   total = x + (x - 2);
-  int z;
+  double z;
   z = total / 2;
   cout << z;
   
