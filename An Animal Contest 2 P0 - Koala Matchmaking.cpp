@@ -1,17 +1,16 @@
 #include <iostream>
+#include <iomanip>  // Include iomanip for setprecision and fixed
 using namespace std;
 
 int main() {
-    int x;
+    double x;
     cin >> x;
-    int y;
-    if (x == 0) {
-        y = -2;
-    } else if (x % 2 == 0) {
-        y = x - 2;
-    } else {
-        y = x - 1;
-    }
-    cout << y << endl;
+    double total = x + (x - 2);
+    double z = total / 2;
+    
+    // Set the precision and format output
+    cout << fixed << setprecision(2);
+    cout << z << endl;
+    
     return 0;
 }
