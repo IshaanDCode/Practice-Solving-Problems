@@ -11,6 +11,6 @@ int main() {
     // Set the precision and format output
     cout << fixed << setprecision(2);
     cout << z << endl;
-    
+    //Compilation errors.
     return 0;
 }
