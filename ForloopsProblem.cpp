@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    vector<string> arr{"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    vector<string> arr{"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}; // Trying to simplyfy the code
     int a, b;
     cin >> a >> b;
     for(int i = a; i <= b; ++i) {
