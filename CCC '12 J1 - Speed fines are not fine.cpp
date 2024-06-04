@@ -8,12 +8,19 @@ int main(){
   int y;
   cin  >> x;
   cin >> y;
-  int z;
-  z = y;
-  if (x >= y){
+  int z = y + 20;
+  int r = z + 30;
+  int q = r + 31;
+  if (y >= x){
     cout << "Congratulations, you are within the speed limit!";
+}
+  else if(x < z){
+    cout << "You are speeding and your fine is $100."
   }
-  else if(x < y + 20){
+  else if(x < r){
+    cout << "You are speedindg and your fine is $270.";
+  }
+  else if(){
     cout << "You are speeding and your fine is $500.";
   }
 }
