@@ -20,7 +20,7 @@ int main(){
   else if(x < r){
     cout << "You are speedindg and your fine is $270.";
   }
-  else if(){
+  else if(x < q){
     cout << "You are speeding and your fine is $500.";
   }
 }
