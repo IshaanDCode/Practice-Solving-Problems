@@ -12,4 +12,14 @@ int main(){
 if( x == y|| y == z|| z == a){
   cout << "Fish At Constant Depth";
 }
+else if(x < y|| y < z|| z < x|| x < a){
+  cout << "Fish Rising";
+}
+  
+else if(x > y|| y > z|| z > x|| x > a){
+  cout << "Fish diving";
+}
+  else{ 
+  cout << "No Fish";
+  }
 }
