@@ -9,7 +9,7 @@ int main(){
   cin >> y;
   cin >> z;
   cin >> a;
-if( x == y|| y == z|| z == a){
+if( x == y){
   cout << "Fish At Constant Depth";
 }
 else if(x < y|| y < z|| z < x|| x < a){
