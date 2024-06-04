@@ -15,7 +15,7 @@ int main(){
     cout << "Congratulations, you are within the speed limit!";
 }
   else if(x < z){
-    cout << "You are speeding and your fine is $100."
+    cout << "You are speeding and your fine is $100.";
   }
   else if(x < r){
     cout << "You are speedindg and your fine is $270.";
