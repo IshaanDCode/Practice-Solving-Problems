@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//Deleting this f
 void update(int *a,int *b) {
     // Complete this function   
     int t,x,y;
