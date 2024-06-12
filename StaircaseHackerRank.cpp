@@ -4,18 +4,14 @@
 using namespace std;
 
 int main(){
-  int szam;
+ int szam;
 cin >> szam;
 for (int i = 0; i < szam; i++) {
 
-    // This loop is new
-    for (int j = 0; j < szam-1+1; j++) {
-        cout << ' ';
+    for (int j = 0; j < szam; j++) {
+        cout << (j < szam-i-1 ? ' ' : '*');
     }
-   for (int j = 0; j <= i; j++) {
-        cout << "*";
-    }
+
     cout << endl;
 }
- 
 }
