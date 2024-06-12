@@ -11,7 +11,7 @@ int main() {
         arr[i].push_back(n); // Corrected pushing into the ith vector
     }
     for(int j = 0; j < 5; j++){
-         cout << arr[j][0] << endl; // Accessing and printing the first element of the ith vector
+         cout << arr[j][0]; // Accessing and printing the first element of the ith vector
     }
     return 0; // Added return statement to indicate successful completion
 }
