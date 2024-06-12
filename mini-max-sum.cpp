@@ -4,14 +4,14 @@
 using namespace std;
 
 int main() {
-    vector<int> arr[5]; // Declaring an array of vectors
-    for (int i = 0; i < 5; i++) { // Corrected loop starting index
+    vector<int> arr[5]; 
+    for (int i = 0; i < 5; i++) { 
         int n;
         cin >> n;
-        arr[i].push_back(n); // Corrected pushing into the ith vector
+        arr[i].push_back(n); 
     }
     for(int j = 0; j < 5; j++){
-         cout << arr[j][0]; // Accessing and printing the first element of the ith vector
+         cout << arr[j][0];
     }
-    return 0; // Added return statement to indicate successful completion
+    return 0; 
 }
