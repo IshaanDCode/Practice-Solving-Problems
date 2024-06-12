@@ -12,6 +12,10 @@ for (int i = 0; i < szam; i++) {
     for (int j = 0; j < szam-1+1; j++) {
         cout << ' ';
     }
-
+   for (int j = 0; j <= i; j++) {
+        cout << "*";
+    }
+    cout << endl;
+}
  
 }
