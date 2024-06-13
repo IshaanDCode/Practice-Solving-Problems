@@ -11,9 +11,9 @@ int main() {
         cin >> n;
         arr[i].push_back(n); 
     }
-    for(int j = 0; j < 5; j++){
-         cout << arr[j][0] << " ";
+    sort(begin(arr), end(arr));
+    for(int j = 1; j < 5; j++){
+        cout << arr[j];
     }
-    arr.sort()
     return 0; 
 }
