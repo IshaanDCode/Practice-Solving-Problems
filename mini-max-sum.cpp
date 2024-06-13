@@ -14,6 +14,6 @@ int main() {
     for(int j = 0; j < 5; j++){
          cout << arr[j][0] << " ";
     }
-    
+    arr.sort()
     return 0; 
 }
