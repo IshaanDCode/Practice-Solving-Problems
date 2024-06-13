@@ -11,7 +11,7 @@ int main() {
         arr[i].push_back(n); 
     }
     for(int j = 0; j < 5; j++){
-         cout << arr[j][0];
+         cout << arr[j][0] << " ";
     }
     return 0; 
 }
