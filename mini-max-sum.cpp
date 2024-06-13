@@ -13,6 +13,6 @@ int main() {
     sort(arr.begin(), arr.end());
     int largestSum = arr[4] + arr[3];
     int smallestSum = arr[0] + arr[1];
-    cout << endl << smallestSum << " " << e;
+    cout << endl << smallestSum << " " << largestSum;
     return 0; 
 }
