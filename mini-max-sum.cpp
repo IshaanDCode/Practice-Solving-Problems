@@ -15,6 +15,7 @@ int main() {
     for(int j = 0; j < 5; j++){
         cout << arr[j][0] " ";
     }
-    // Hello
+    int smallestSum = arr[0] + arr[1];
+    cout << smallestSum;
     return 0; 
 }
