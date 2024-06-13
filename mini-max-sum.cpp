@@ -15,5 +15,6 @@ int main() {
     for(int j = 0; j < 5; j++){
         cout << arr[j][0] " ";
     }
+    // Hello
     return 0; 
 }
