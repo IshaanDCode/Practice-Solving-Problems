@@ -4,7 +4,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
+//bomboclatt
 int main() {
     int n;
     cin >> n;
