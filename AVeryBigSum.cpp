@@ -4,7 +4,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-//hello
+
 int main() {
     int n;
     cin >> n;
