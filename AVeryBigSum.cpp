@@ -3,8 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-using namespace std;
-// code starts here
+using namespace std
 int main() {
     int n;
     cin >> n;
