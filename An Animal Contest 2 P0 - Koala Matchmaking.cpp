@@ -8,6 +8,7 @@ int main() {
     double total = x + (x - 2);
     double z = total / 2;
     
+
     // Set the precision and format output
     cout << fixed << setprecision(2);
     cout << z << endl;
